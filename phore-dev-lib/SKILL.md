@@ -80,6 +80,10 @@ Niemals darfst du:
 Nutze wo geht Exceptions. Teste php funktionen auf Rückgabewerte und wirf Exceptions bei Fehlern. Verwende niemals
 exit() die() order trigger_error() ohne zu fragen. Wenn Custom Exceptions definiert sind, nutze diese. Wenn keine Custom Exceptions definiert sind, nutze die Standard Exceptions.
 
+## Environment-Variablen
+
+Greife niemals direkt auf Environment-Variablen zu außer dies ist explizit gewünscht.
+
 ## Unittests
 
 Lege Unittests ausschließlich unter `test/` ab. Vermeide es, Tests in `src/` zu platzieren.
