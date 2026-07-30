@@ -69,10 +69,16 @@ Wenn durch die Arbeit öffentliche Klassen, Funktionen, Beispiele oder zentrale 
 3. Prüfe die vorhandene `.ai-usage-info.md` und aktualisiere sie nur, wenn sich durch die Änderungen relevante öffentliche APIs oder Nutzungsmuster geändert haben.
 
 
+
 ## Dies darfst Du nicht
 
 Niemals darfst du:
 - Direkt in `/vendor/` oder `/node_modules/` schreiben.
+
+## Exceptions
+
+Nutze wo geht Exceptions. Teste php funktionen auf Rückgabewerte und wirf Exceptions bei Fehlern. Verwende niemals
+exit() die() order trigger_error() ohne zu fragen. Wenn Custom Exceptions definiert sind, nutze diese. Wenn keine Custom Exceptions definiert sind, nutze die Standard Exceptions.
 
 ## Unittests
 
