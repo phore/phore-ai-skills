@@ -71,3 +71,8 @@ assert(meine_methode($param1, param2) === 'Erwartetes Ergebnis'); // Kurze Besch
 assert(meine_methode2($param1, param2) === 'Erwartetes Ergebnis'); // Kurze Beschreibung, was die Funktion macht
 ...
 ```
+
+
+## Was gehört nicht in in die `.ai-usage-info.md` Datei
+
+- Hinweise zu unittests (außer explizit für die Nutzung der Library relevant) oder explizit genannt, dass diese inkludiert werden sollen.

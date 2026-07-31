@@ -84,6 +84,8 @@ Sind komplexe Abläufe nötig, sollten komplette logikabschnitte in eigene Funkt
 
 Vermeide es, private helper methoden, die nur in einer methode genutzt werden anzulegen. Packe diese besser in die Methode selbst, um die Lesbarkeit zu erhöhen.
 
+Vermeide es gerade in unit-tests private helper-methoden einzufügen. Vereinfache die Tests stattdessen, damit die Lesbarkeit erhöht wird. Verwende lokae callbacks oder anonyme Funktionen, wenn nötig.
+Versuche die Unittests so zu gestelten, wie auch der User später die Api nutzen wird.
 
 ## Exceptions
 
