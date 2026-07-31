@@ -75,6 +75,16 @@ Wenn durch die Arbeit öffentliche Klassen, Funktionen, Beispiele oder zentrale 
 Niemals darfst du:
 - Direkt in `/vendor/` oder `/node_modules/` schreiben.
 
+## Helper functions / methods
+
+Helper methoden oder funktionen, die in mehr als einer Klasse genutzt werden sollten unter einer Helper-Klasse als statische Methode
+angelegt werden.
+
+Sind komplexe Abläufe nötig, sollten komplette logikabschnitte in eigene Funktionsklassen ausgelagert werden. 
+
+Vermeide es, private helper methoden, die nur in einer methode genutzt werden anzulegen. Packe diese besser in die Methode selbst, um die Lesbarkeit zu erhöhen.
+
+
 ## Exceptions
 
 Nutze wo geht Exceptions. Teste php funktionen auf Rückgabewerte und wirf Exceptions bei Fehlern. Verwende niemals
